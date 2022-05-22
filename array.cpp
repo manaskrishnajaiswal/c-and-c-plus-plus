@@ -10,6 +10,8 @@ int main()
     A[2] = 25;
 
     cout<<sizeof(A)<<endl;
-    cout<<A[1];
+    cout<<A[1]<<endl;
+    printf("%d\n", A[2]);
+
     return 0;
 }
