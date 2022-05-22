@@ -4,11 +4,15 @@ using namespace std;
 
 int main()
 {
-    int A[10] = {2, 4, 6, 8, 10, 12};
+    int n;
+    cout<<"Enter Size:";
+    cin>>n;
+    int A[n];
+    A[0]=2;
 
-    for(int i = 0; i < 10; i++)
+    for(int x:A)
     {
-        cout<<A[i]<<endl;
+        cout<<x<<endl;
     }
 
     return 0;
