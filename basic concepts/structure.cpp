@@ -19,6 +19,8 @@ int main()
 
     printf("Area of rectangle is %d and size is %d.", r.length*r.breadth, sizeof(r));
     printf("\n");
+    cout<<r1.length<<endl;
+    cout<<r1.breadth<<endl;
     printf("Area of rectangle is %d.", r1.length*r1.breadth);
     return 0;
 }
