@@ -12,6 +12,7 @@ struct rectangle
 
 int area(struct rectangle r1)
 {
+    r1.length=20;
     return r1.length*r1.breadth;
 }
 
