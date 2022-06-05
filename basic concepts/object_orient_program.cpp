@@ -5,10 +5,10 @@ using namespace std;
 
 class rectangle
 {
-public:
+private:
     int length;
     int breadth;
-
+public:
 void initialise(int l, int b)
 {
     length=l;
