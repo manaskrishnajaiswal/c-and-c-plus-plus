@@ -11,6 +11,8 @@ int fun(int n) {
 
 int main() {
     int a = 95;
-    fun(a);
+    int r;
+    r = fun(a);
+    printf("%d\n", r);
     return 0;
 }
