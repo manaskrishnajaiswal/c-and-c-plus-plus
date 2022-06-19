@@ -1,25 +1,16 @@
 #include<stdio.h>
-
 #include<math.h>
-void update(int *a,int *b) {
-    // Complete this function
-    int c = *a;
-    *a = *a + *b;
-    *b = abs(c - *b);    
-}
 
-int main() {
-    int a, b;
-    int *pa = &a, *pb = &b;
-    
-    scanf("%d %d", &a, &b);
-    printf("%d %d\n", a, b);
-    printf("%d %d\n", &a, &b);
-    printf("%d %d\n", pa, pb);
-    printf("%d %d\n", &pa, &pb);
-    printf("%d %d\n", *pa, *pb);
-    update(pa, pb);
-    printf("%d\n%d", a, b);
+void count(int n) {
+    static int d = 1; 
+    printf("%d", n); 
+    printf("%d", d); 
+    d++; 
+    if (n > 1) count (n-1); 
+    printf("%d", d);
+} 
 
+int main () {
+    count(3);
     return 0;
 }
